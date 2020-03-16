@@ -1,26 +1,66 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-		<link type="text/css" rel="styleSheet"  href="css/outlife.css" />
-	</head>
-	<body id="global">
-		<div id="app">
-			<h1>{{name}}</h1>
-			<h2>{{description}}</h2>
-			<h2>{{qq}}</h2>
-		</div>
-		<script src="js/vue.min.js"></script>
-		<script>
-			const app = new Vue({
-				el:'#app', 
-				data:{
-					name:'Outlife Minecraft Server',
-					description:'紧跟最新版本，关注纯净生存',
-					qq:'qq群： 1032428184'
-				}
-			})
-		</script>
-	</body>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<title>Outlife Minecraft Server</title>
+</head>
+<body>
+	<div id="myCarousel" class="carousel slide" > 
+		<div class="carousel-inner">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to ="0" class="active" ></li>
+				<li data-target="#myCarousel" data-slide-to ="1"></li>
+				<li data-target="#myCarousel" data-slide-to ="2"></li>
+				<li data-target="#myCarousel" data-slide-to ="3"></li>
+				<li data-target="#myCarousel" data-slide-to ="4"></li>
+			</ol>
+
+			<div class="item active">
+				<a href="#">
+					<img src="img/1.jpg" alt="第一张" width="100%">
+				</a>
+			</div>
+			<div class="item">
+				<a href="#">
+					<img src="img/2.jpg" alt="第二张" width="100%">
+				</a>
+			</div>
+			<div class="item">
+				<a href="#">
+					<img src="img/3.jpg" alt="第三张" width="100%">
+				</a>
+			</div>
+			<div class="item">
+				<a href="#">
+					<img src="img/4.jpg" alt="第四张" width="100%">
+				</a>
+			</div>
+			<div class="item">
+				<a href="#">
+					<img src="img/5.jpg" alt="第五张" width="100%">
+				</a>
+			</div>
+		<a href="#myCarousel" data-slide="prev" class="carousel-control left">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a href="#myCarousel" data-slide="next" class="carousel-control right">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+ 
+
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+	//轮播图自动播放
+	$('#myCarousel').carousel({
+		interval: 3000,//自动播放4s
+ 
+	});
+ 
+});
+</script>
+</body>
 </html>
