@@ -16,9 +16,7 @@ export default {
     context.head.push([
       'style',
       {},
-      `.dark span {
-        color: rgb(255, 0, 0);
-        }
+      `
         .dark .VPHome {
           background-image: url(img/1.jpg);
         }
@@ -27,6 +25,12 @@ export default {
           background-repeat: no-repeat;
           background-position: center;
           background-attachment: fixed;
+        }
+        .VPHome::before {
+          content: "";
+          position: fixed;
+          top: 0; left: 0; bottom: 0; right: 0;
+          backdrop-filter: blur(5px);
         }
       `,
     ])
