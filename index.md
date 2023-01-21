@@ -22,20 +22,3 @@ features:
     details: 没什么规则...
 
 ---
-
-<script>
-
-let timer = setInterval(() => {
-  let app = (document.getElementsByClassName("VPHome"))[0]
-  if (app) {
-    app.style.backgroundImage = 'url("/img/4.jpg")'
-    app.style.backgroundRepeat = 'no-repeat'
-    app.style.backgroundPosition = 'center'
-    app.style.backgroundAttachment = 'fixed'
-
-    clearInterval(timer)
-  }
-}, 100)
-
-</script>
-
