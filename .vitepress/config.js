@@ -4,6 +4,7 @@ export default {
   themeConfig: {
     logo: '/img/outlife.png',
     nav: [
+      { text: 'About', link: '/about' },
       { text: 'Map', link: 'https://map.outlife.world' },
       { text: 'Telegram', link: 'https://t.me/outlifemc' },
     ],
