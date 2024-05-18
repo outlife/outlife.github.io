@@ -25,10 +25,10 @@ features:
 
 <style>
 .dark .VPHome {
-  background-image: url(img/1.jpg);
+  background-image: url(public/img/1.jpg);
 }
 .VPHome {
-  background-image: url(img/4.jpg);
+  background-image: url(public/img/4.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
