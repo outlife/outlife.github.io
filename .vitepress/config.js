@@ -6,6 +6,7 @@ export default {
     nav: [
       { text: 'About', link: '/about' },
       { text: 'Map', link: 'https://map.outlife.world' },
+      { text: 'Status', link: 'https://status.binbat.com/status/outlife' },
       { text: 'Telegram', link: 'https://t.me/outlifemc' },
     ],
     socialLinks: [
