@@ -22,3 +22,26 @@ features:
     details: 没什么规则...
 
 ---
+
+<style>
+.dark .VPHome {
+  background-image: url(img/1.jpg);
+}
+.VPHome {
+  background-image: url(img/4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.VPHome::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  backdrop-filter: blur(5px);
+}
+
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+}
+</style>
