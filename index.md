@@ -24,16 +24,16 @@ features:
 ---
 
 <style>
-.dark .VPHome {
+.dark .VPContent.is-home {
   background-image: url(public/img/1.jpg);
 }
-.VPHome {
+.VPContent.is-home {
   background-image: url(public/img/4.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
 }
-.VPHome::before {
+.VPContent::before {
   content: "";
   position: fixed;
   top: 0; left: 0; bottom: 0; right: 0;
